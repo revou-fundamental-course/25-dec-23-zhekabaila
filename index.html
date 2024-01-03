@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitung Segitiga | Zheka Baila Arkan</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Welcome to kelkulatoe segitiga</h1>
+      <p class="description">Selamat datang di kalkulator segitiga</p>
+      <ul>
+        <li>
+          <a href="#luas-section">Luas Segitiga</a>
+        </li>
+        <li>
+          <a href="#keliling-section">Keliling Segitiga</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section id="luas-section">
+        <section>
+          <h2 class="title-section">Luas Segitiga</h2>
+          <div class="content-section">
+            <div>
+              <img
+                src="./assets/images/segitiga.jpg"
+                style="width: 100%; height: autos"
+                alt=""
+              />
+            </div>
+            <div style="margin-top: 12px">
+              <h3>Rumus Luas Segitiga:</h3>
+              <p style="text-align: center; margin-top: 12px">
+                L = 1/2 x a x t
+              </p>
+            </div>
+            <div style="margin-top: 12px">
+              <h3>Di mana:</h3>
+              <ul style="margin-top: 12px">
+                <li>L = Luas</li>
+                <li>a = Panjang Alas</li>
+                <li>t = Tinggi</li>
+              </ul>
+            </div>
+            <form id="luas-form">
+              <h3>Hitung Luas Segitiga</h3>
+              <div>
+                <label for="alas">Nilai Alas = </label>
+                <input
+                  type="text"
+                  id="alas"
+                  placeholder="Nilai Alas"
+                  required
+                />
+              </div>
+              <div>
+                <label for="tinggi">Nilai Tinggi = </label>
+                <input
+                  type="text"
+                  id="tinggi"
+                  placeholder="Nilai Tinggi"
+                  required
+                />
+              </div>
+              <div id="validation-error-luas" class="validation-error">
+                Masukan harus berupa angka!
+              </div>
+              <div id="hasil-luas" style="display: none">
+                <h3>Hasil:</h3>
+                <ul style="margin-top: 12px">
+                  <li>L = 1/2 x a x t</li>
+                  <li>
+                    L = 1/2 x <span id="hasil-alas"></span> x
+                    <span id="hasil-tinggi"></span>
+                  </li>
+                  <li>L = <span id="luas"></span></li>
+                </ul>
+              </div>
+              <div class="button-wrapper">
+                <button type="submit" class="hitung-luas-button">hitung</button>
+                <button
+                  type="button"
+                  class="reset-luas-button"
+                  onclick="resetLuasForm()"
+                >
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
+      <section id="keliling-section">
+        <h2 class="title-section">Keliling Segitiga</h2>
+        <div class="content-section">
+          <div>
+            <img
+              src="./assets/images/segitiga.jpg"
+              style="width: 100%; height: autos"
+              alt=""
+            />
+          </div>
+          <div style="margin-top: 12px">
+            <h3>Rumus Keliling Segitiga:</h3>
+            <p style="text-align: center; margin-top: 12px">K = S1 + S2 + S3</p>
+          </div>
+          <div style="margin-top: 12px">
+            <h3>Di mana:</h3>
+            <ul style="margin-top: 12px">
+              <li>K = Keliling</li>
+              <li>S1 = Sisi A</li>
+              <li>S2 = Sisi B</li>
+              <li>S3 = Sisi C</li>
+            </ul>
+          </div>
+          <form id="keliling-form">
+            <h3>Hitung Keliling Segitiga</h3>
+            <div>
+              <label for="sisiA">Sisi A = </label>
+              <input type="text" id="sisiA" placeholder="Sisi A" required />
+            </div>
+            <div>
+              <label for="sisiB">Sisi B = </label>
+              <input type="text" id="sisiB" placeholder="Sisi B" required />
+            </div>
+            <div>
+              <label for="sisiC">Sisi C = </label>
+              <input type="text" id="sisiC" placeholder="Sisi C" required />
+            </div>
+            <div id="validation-error" class="validation-error">
+              Masukan harus berupa angka!
+            </div>
+            <div id="hasil-keliling" style="display: none">
+              <h3>Hasil:</h3>
+              <ul style="margin-top: 12px">
+                <li>K = S1 + S2 + S3</li>
+                <li>
+                  K = <span id="S1"></span> + <span id="S2"></span> +
+                  <span id="S3"></span>
+                </li>
+                <li>K = <span id="keliling"></span></li>
+              </ul>
+            </div>
+            <div class="button-wrapper">
+              <button type="submit" class="hitung-button">hitung</button>
+              <button
+                type="button"
+                class="reset-button"
+                onclick="resetKelilingForm()"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
