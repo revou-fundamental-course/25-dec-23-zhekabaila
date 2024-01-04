@@ -26,75 +26,68 @@
     </header>
     <main>
       <section id="luas-section">
-        <section>
-          <h2 class="title-section">Luas Segitiga</h2>
-          <div class="content-section">
+        <h2 class="title-section">Luas Segitiga</h2>
+        <div class="content-section">
+          <div>
+            <img
+              src="./assets/images/segitiga.jpg"
+              class="gambar-rumus"
+              alt=""
+            />
+          </div>
+          <div class="rumus-luas-container">
+            <h3>Rumus Luas Segitiga:</h3>
+            <p class="rumus">L = 1/2 x a x t</p>
+          </div>
+          <div class="rumus-variable-luas">
+            <h3>Di mana:</h3>
+            <ul>
+              <li>L = Luas</li>
+              <li>a = Panjang Alas</li>
+              <li>t = Tinggi</li>
+            </ul>
+          </div>
+          <form id="luas-form">
+            <h3>Hitung Luas Segitiga</h3>
             <div>
-              <img
-                src="./assets/images/segitiga.jpg"
-                style="width: 100%; height: autos"
-                alt=""
+              <label for="alas">Nilai Alas = </label>
+              <input type="text" id="alas" placeholder="Nilai Alas" required />
+            </div>
+            <div>
+              <label for="tinggi">Nilai Tinggi = </label>
+              <input
+                type="text"
+                id="tinggi"
+                placeholder="Nilai Tinggi"
+                required
               />
             </div>
-            <div style="margin-top: 12px">
-              <h3>Rumus Luas Segitiga:</h3>
-              <p class="rumus">L = 1/2 x a x t</p>
+            <div id="validation-error-luas" class="validation-error">
+              Masukan harus berupa angka!
             </div>
-            <div style="margin-top: 12px">
-              <h3>Di mana:</h3>
-              <ul style="margin-top: 12px">
-                <li>L = Luas</li>
-                <li>a = Panjang Alas</li>
-                <li>t = Tinggi</li>
+            <div id="hasil-luas">
+              <h3>Hasil:</h3>
+              <ul>
+                <li>L = 1/2 x a x t</li>
+                <li>
+                  L = 1/2 x <span id="hasil-alas"></span> x
+                  <span id="hasil-tinggi"></span>
+                </li>
+                <li>L = <span id="luas"></span></li>
               </ul>
             </div>
-            <form id="luas-form">
-              <h3>Hitung Luas Segitiga</h3>
-              <div>
-                <label for="alas">Nilai Alas = </label>
-                <input
-                  type="text"
-                  id="alas"
-                  placeholder="Nilai Alas"
-                  required
-                />
-              </div>
-              <div>
-                <label for="tinggi">Nilai Tinggi = </label>
-                <input
-                  type="text"
-                  id="tinggi"
-                  placeholder="Nilai Tinggi"
-                  required
-                />
-              </div>
-              <div id="validation-error-luas" class="validation-error">
-                Masukan harus berupa angka!
-              </div>
-              <div id="hasil-luas" style="display: none">
-                <h3>Hasil:</h3>
-                <ul style="margin-top: 12px">
-                  <li>L = 1/2 x a x t</li>
-                  <li>
-                    L = 1/2 x <span id="hasil-alas"></span> x
-                    <span id="hasil-tinggi"></span>
-                  </li>
-                  <li>L = <span id="luas"></span></li>
-                </ul>
-              </div>
-              <div class="button-wrapper">
-                <button type="submit" class="hitung-luas-button">hitung</button>
-                <button
-                  type="button"
-                  class="reset-luas-button"
-                  onclick="resetLuasForm()"
-                >
-                  Reset
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
+            <div class="button-wrapper">
+              <button type="submit" class="hitung-luas-button">hitung</button>
+              <button
+                type="button"
+                class="reset-luas-button"
+                onclick="resetLuasForm()"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
       <section id="keliling-section">
         <h2 class="title-section">Keliling Segitiga</h2>
@@ -102,17 +95,17 @@
           <div>
             <img
               src="./assets/images/segitiga.jpg"
-              style="width: 100%; height: autos"
+              class="gambar-rumus"
               alt=""
             />
           </div>
-          <div style="margin-top: 12px">
+          <div class="rumus-keliling-container">
             <h3>Rumus Keliling Segitiga:</h3>
             <p class="rumus">K = S1 + S2 + S3</p>
           </div>
-          <div style="margin-top: 12px">
+          <div class="rumus-variable-keliling">
             <h3>Di mana:</h3>
-            <ul style="margin-top: 12px">
+            <ul>
               <li>K = Keliling</li>
               <li>S1 = Sisi A</li>
               <li>S2 = Sisi B</li>
@@ -136,9 +129,9 @@
             <div id="validation-error" class="validation-error">
               Masukan harus berupa angka!
             </div>
-            <div id="hasil-keliling" style="display: none">
+            <div id="hasil-keliling">
               <h3>Hasil:</h3>
-              <ul style="margin-top: 12px">
+              <ul>
                 <li>K = S1 + S2 + S3</li>
                 <li>
                   K = <span id="S1"></span> + <span id="S2"></span> +
