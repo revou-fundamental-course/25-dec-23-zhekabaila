@@ -80,8 +80,13 @@ section {
   padding: 12px;
 }
 
+.gambar-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .gambar-rumus {
-  width: 100%;
+  width: 307px;
   height: auto;
 }
 
