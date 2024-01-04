@@ -80,9 +80,34 @@ section {
   padding: 12px;
 }
 
+.gambar-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.gambar-rumus {
+  width: 307px;
+  height: auto;
+}
+
 .content-section {
   background-color: #eef5ff;
   padding: 16px;
+}
+
+.rumus-keliling-container,
+.rumus-luas-container {
+  margin-top: 12px;
+}
+
+.rumus-variable-keliling,
+.rumus-variable-luas {
+  margin-top: 12px;
+}
+
+.rumus-variable-keliling,
+.rumus-variable-keliling > ul {
+  margin-top: 12px;
 }
 
 form {
@@ -160,7 +185,12 @@ form > div > input:focus {
 }
 
 #hasil-keliling {
+  display: none;
   margin-top: 28px;
+}
+
+#hasil-keliling > ul {
+  margin-top: 12px;
 }
 
 main {
@@ -175,6 +205,14 @@ main {
   margin-top: 12px;
   font-size: 24px;
   font-weight: 600;
+}
+
+#hasil-luas {
+  display: none;
+}
+
+#hasil-luas > ul {
+  margin-top: 12px;
 }
 
 footer {
